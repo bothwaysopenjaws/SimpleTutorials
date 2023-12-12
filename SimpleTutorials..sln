@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTutorials.Wpf.Authentication", "..\SimpleTutorials\SimpleTutorials.Wpf.Authentication\SimpleTutorials.Wpf.Authentication.csproj", "{6267602B-995D-44AC-A36D-DEBA6129936A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6267602B-995D-44AC-A36D-DEBA6129936A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6267602B-995D-44AC-A36D-DEBA6129936A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6267602B-995D-44AC-A36D-DEBA6129936A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6267602B-995D-44AC-A36D-DEBA6129936A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDD01072-FEAD-4EDB-A588-1DC59CFB0750}
+	EndGlobalSection
+EndGlobal
