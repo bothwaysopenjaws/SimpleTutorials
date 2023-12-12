@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using SimpleTutorials.Core;
 using SimpleTutorials.DbLib.Model;
-using SimpleTutorials.Wpf.Authentication.Services.Authentication;
 
 namespace SimpleTutorials.Wpf.Authentication.ViewModels
 {
