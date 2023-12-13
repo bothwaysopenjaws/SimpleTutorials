@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:SimpleTutorials.Wpf.Authentication.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" 
-             
+             xmlns:adorners="http://gu.se/Adorners"
              >
     <Grid Grid.Row="0" Background="DarkViolet" Visibility="{Binding IsLoggedIn, Converter={StaticResource SharedBoolToVisibilityConverter}, UpdateSourceTrigger=PropertyChanged, ConverterParameter='!'}">
         <Grid.ColumnDefinitions>
@@ -28,8 +28,8 @@
         <TextBlock Grid.Column="1" Grid.Row="2" Text="Mot de passe : " Foreground="White" />
 
 
-        <TextBox     Grid.Column="2" Grid.Row="1" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" />
-        <PasswordBox x:Name="PasswordBoxLogin" Grid.Column="2" Grid.Row="2" PasswordChanged="PasswordBoxLogin_PasswordChanged" />
+        <TextBox     Grid.Column="2" Grid.Row="1" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" adorners:Watermark.Text="Identifiant"  />
+        <PasswordBox x:Name="PasswordBoxLogin" Grid.Column="2" Grid.Row="2" PasswordChanged="PasswordBoxLogin_PasswordChanged" adorners:Watermark.Text="Mot de passe"  />
         <Label Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Content="{Binding Message}" Foreground="White" Opacity="0.7" HorizontalAlignment="Center" />
 
         <Button x:Name="ConnectButton" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Content="C'est parti" Click="ConnectButton_Click" />
