@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SimpleTutorials.Api.MinimalApi": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:63827;http://localhost:63828"
+    }
+  }
+}
