@@ -20,7 +20,6 @@ public partial class App : Application
 
     #endregion
 
-
     #region Properties
 
     public bool IsLoggedIn { get => _IsLoggedIn; set => _IsLoggedIn = value; }

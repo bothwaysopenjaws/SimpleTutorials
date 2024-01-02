@@ -1,13 +1,7 @@
-﻿using System.Text;
+﻿using SimpleTutorials.DPIWpf.DBLib;
+using SimpleTutorials.DPIWpf.Wpf.StartupHelpers;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace SimpleTutorials.DPIWpf.Wpf
 {
@@ -16,9 +10,18 @@ namespace SimpleTutorials.DPIWpf.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private readonly IDataAccess _DataAccess;
+        private readonly IAbstractFactory<ChildFormWindow> _ChildFormWindowFactory;
+
+        public MainWindow(IDataAccess dataAccess, IAbstractFactory<ChildFormWindow> childFormWindowFactory)
         {
             InitializeComponent();
+            this._DataAccess = dataAccess;
+            this._ChildFormWindowFactory = childFormWindowFactory;
         }
+
+        private void ButtonGetData_Click(object sender, RoutedEventArgs e) => TextBlockDatas.Text = _DataAccess.GetData();
+
+        private void ButtonOpenChild_Click(object sender, RoutedEventArgs e) => _ChildFormWindowFactory.Create().Show();
     }
 }

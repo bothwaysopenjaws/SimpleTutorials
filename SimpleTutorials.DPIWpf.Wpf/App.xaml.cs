@@ -1,8 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SimpleTutorials.DPIWpf.DBLib;
 using System.Configuration;
 using System.Data;
 using System.Windows;
+using SimpleTutorials.DPIWpf.Wpf.StartupHelpers;
+
 
 namespace SimpleTutorials.DPIWpf.Wpf;
 
@@ -27,6 +30,8 @@ public partial class App : Application
             .ConfigureServices((hostContext, services) => 
             {
                 services.AddSingleton<MainWindow>();
+                services.AddTransient<IDataAccess, DataAccess>();
+                services.AddFormFactory<ChildFormWindow>();
             
             }).Build() ;
 

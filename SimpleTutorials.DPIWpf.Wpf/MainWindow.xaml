@@ -8,5 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+		<TextBlock x:Name="TextBlockDatas"/>
+		<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Button x:Name="ButtonGetData" Content="Datas" Padding="5" Click="ButtonGetData_Click"  />
+			<Button x:Name="ButtonOpenCHild" Content="Open Child" Padding="5" Click="ButtonOpenChild_Click"  />
+		</StackPanel>
+
     </Grid>
 </Window>
