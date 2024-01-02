@@ -1,0 +1,18 @@
+﻿<Window x:Class="SimpleTutorials.DPIWpf.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleTutorials.DPIWpf.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+		<TextBlock x:Name="TextBlockDatas"/>
+		<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+			<Button x:Name="ButtonGetData" Content="Datas" Padding="5" Click="ButtonGetData_Click"  />
+			<Button x:Name="ButtonOpenCHild" Content="Open Child" Padding="5" Click="ButtonOpenChild_Click"  />
+		</StackPanel>
+
+    </Grid>
+</Window>
