@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "19e449e0-6024-4399-8f7e-672aac24e509",
+		"name": "SimpleTutorials.Api.MinimalApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21486994"
+	},
+	"item": [
+		{
+			"name": "Simple Get",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Get By Id url",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:63827/get",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "63827",
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Post with query",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Article 1\"",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:63827/post/query/?name=article%204",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "63827",
+					"path": [
+						"post",
+						"query",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "article%204"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Simple Post with body Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\": 0,\r\n    \"Name\" : \"Article 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:63827/post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "63827",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
