@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\SimpleTutorials.Blazor.Components\SimpleTutorials.Blazor.Components.csproj" />
+    <ProjectReference Include="..\..\SimpleTutorials.Blazor.Models\SimpleTutorials.Blazor.Models.csproj" />
+    <ProjectReference Include="..\..\SimpleTutorials.Blazor.Services\SimpleTutorials.Blazor.Services.csproj" />
+    <ProjectReference Include="..\SimpleTutorials.Blazor.WebApp.Client\SimpleTutorials.Blazor.WebApp.Client.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
